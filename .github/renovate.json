@@ -1,0 +1,20 @@
+{
+  "labels": ["dependencies"],
+  "semanticCommits": "enabled",
+  "lockFileMaintenance": { "enabled": true },
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "Dev-Dependencies (non-major)",
+      "groupSlug": "dev-dependencies"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "Dependencies (non-major)",
+      "groupSlug": "dependencies"
+    }
+  ]
+}
