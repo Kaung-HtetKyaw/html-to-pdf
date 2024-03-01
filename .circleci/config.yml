@@ -105,7 +105,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
           requires:
             - validate-project
       - load-testing:
@@ -114,4 +114,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
